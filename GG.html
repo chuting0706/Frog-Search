@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>宅宅調查</title>
+<!-- <link href="mycss.css" rel="stylesheet" type="text/css" /> -->
+<style type="text/css"> 
+table {
+border: 2px solid yellow;
+width:35%;
+}
+th, td{
+border: 2px solid gold;
+font-size:25px;
+font-weight:bold;
+font-family:標楷體;
+text-align:right;
+width:50px;
+}
+
+
+</style>
+</head>
+<body>
+<link rel = "stylesheet" type = "text/css" href = "hk.css">
+<form action="http://ycchen.im.ncnu.edu.tw/join.php" method="post">
+<table>
+<tr><th style="text-align:center", colspan="4">查詢UI</th></tr>
+
+<tr>
+<td style="text-align:center">關鍵字</td>
+<td style="text-align:left"><input type="text" name="keyword" placeholder="ex.艾氏樹蛙"/></td>
+</tr>
+<tr>
+<td style="text-align:center">物種</td>
+<td style="text-align:left">
+<select name="label">
+<option value="frog" selected >青蛙</option>
+<option value="lepidoptera" >蝴蝶</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="text-align:center">科別</td>
+<td style="text-align:left"><input type="text" name="family" placeholder="ex.樹蛙科"/></td>
+</tr>
+<tr>
+<td style="text-align:center">屬</td>
+<td style="text-align:left"><input type="text" name="genus" placeholder="ex.原指樹蛙屬"/></td>
+</tr>
+<tr><th style="text-align:center", colspan="4"><input type="submit" value="Ok" /></tr>
+
+</table>
+</body>
+</html>
