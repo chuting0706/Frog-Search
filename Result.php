@@ -1,3 +1,4 @@
+
 <?php
     //if ( ! isset($_SESSION['uID']) or $_SESSION['uID'] <= 0) {
       //  header("Location: ../Views/loginForm.php");
@@ -6,14 +7,39 @@
     //require("../Modules/loginModel.php");
     require("../Modules/Function.php");
 ?>
+<style type="text/css">
+div {
+margin:  auto;
+padding: 50px;
+background-color: #FFFFF0;
+border: dotted green 5px
+}
+a{
+text-decoration:none;
+color:#4B0082
+}
+table tr td {
+background-color: #cfc;
+padding: 10px;
+}
+</style>
+
 <div class = "container">
 <?php
     $Keyword = $_REQUEST['Keyword'];
     $Label = $_REQUEST['Label'];
     $Family = $_REQUEST['Family'];
     $Genus = $_REQUEST['Genus'];
-    echo "你輸入的值為："."<br/>Keyword: ".$Keyword."<br/>Label: ".$Label."<br/>Family: ".$Family."<br/>Genus: ".$Genus;
-    echo "<br/><hr/><h1>搜尋結果如下：</h1>";
+    echo  '<a href="Search.html" >重新輸入</a>';
+	echo  '<a href="Search.html" style="float:right;">登出</a><hr/>';
+	echo "<table><tr><td colspan=4>你輸入的值為</td></tr>"."
+	<tr><td>Keyword:</td><td>".$Keyword."
+	</td><td>Label:</td><td>".$Label."
+	</td></tr><tr><td>Family: </td><td>".$Family."
+	</td><td>Genus:</td><td>".$Genus;
+	echo '</td></tr></table>';
+    
+    echo "<hr/><h1>搜尋結果如下：</h1>";
     echo '<table class = "table"><tr>';
     $results = searchEcology($Keyword, $Label, $Family, $Genus);
     $count = 0;
