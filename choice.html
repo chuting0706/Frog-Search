@@ -1,0 +1,91 @@
+<?php
+	session_start();
+
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
+<title>查詢系統</title>
+<!-- <link href="mycss.css" rel="stylesheet" type="text/css" /> -->
+<style type = "text/css">
+html{
+    background: linear-gradient(#C9FFC9, #008000) fixed;
+}
+table{
+    border: 4px solid #227700;
+    width: 500px;
+    margin: 225px auto;
+}
+th{
+    border: 2px solid #444444;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+}
+td{
+    border: 2px solid #444444;
+    font-size: 30px;
+    width: 80px;
+    font-weight: bold;
+    font-family: 標楷體;
+}
+select{
+    cursor: pointer;
+}
+.reset{
+    border: 2px solid #FFA488;
+    border-radius: 15%;
+    width: 50px;
+    background: #FFC8B4;
+    font-size: 15px;
+    font-weight: bold;
+    color: #666666;
+    cursor: pointer;
+    margin: 10px;
+}
+.reset:hover{
+    color: black;
+}
+.sure{
+    border: 2px solid #FF8282;
+    border-radius: 15%;
+    width: 50px;
+    background:  #FFC9C9;
+    font-size: 15px;
+    font-weight: bold;
+    color: #007799;
+    cursor: pointer;
+    margin: 10px;
+}
+.sure:hover{
+    color: #000085;
+}
+
+</style>
+</head>
+<body>
+<link rel = "stylesheet" type = "text/css">
+<form action="Search		Result.php" method="post">
+<input type="hidden" name ="act" value ="searchEcology">
+<table>
+<tr><th colspan="2">歡迎進入查詢系統</br>請選擇要查詢的物種</th></tr>
+
+<tr>
+<td style="text-align:center">青蛙</td>
+<td style="text-align:center">蝴蝶</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="search.html"><img width="500px" src="img/b.jpg"></a></td>
+<td style="text-align:center"><a href="search.html"><img width="500px"src="img/a.jpg"></a></td>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>
