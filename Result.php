@@ -23,10 +23,14 @@
                 echo "<td>$name</td>";
                 $count ++;
             }
+            echo "</tr><tr>";
+            foreach ($section as $name => $val) {
+                echo "<td>$val</td>";
+            }
         } else if ($count > 0) {
             echo "</tr><tr>";
             foreach ($section as $name => $val) {
-              echo "<td>$val</td>";
+                echo "<td>$val</td>";
             }
         }
         echo "</tr>";
