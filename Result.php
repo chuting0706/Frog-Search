@@ -1,11 +1,8 @@
 <?php
-    //if ( ! isset($_SESSION['uID']) or $_SESSION['uID'] <= 0) {
-      //  header("Location: ../Views/loginForm.php");
-        //exit(0);
-   // }
-    //require("../Modules/loginModel.php");
     require("../Modules/Function.php");
 ?>
+<link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
+<title>查詢結果</title>
 <div class = "container">
 <?php
     $Keyword = $_REQUEST['Keyword'];
@@ -38,6 +35,3 @@
     echo '</table>'
 ?>
 </div>
-<?php
-    //include 'footer.php'
-?>
