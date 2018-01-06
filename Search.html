@@ -10,11 +10,16 @@
 <head>
 <meta charset="UTF-8" />
 <link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
-<title>查詢系統</title>
+<title>登入系統</title>
 <!-- <link href="mycss.css" rel="stylesheet" type="text/css" /> -->
 <style type = "text/css">
-html{
-    background: linear-gradient(#C9FFC9, #008000) fixed;
+body {
+background-image:url('img/back.jpg');
+background-repeat:no-repeat;
+/*background-size: contain;
+background-position:center;*/
+min-height:100vh;
+
 }
 table{
     border: 4px solid #227700;
@@ -38,7 +43,7 @@ select{
     cursor: pointer;
 }
 .reset{
-    border: 2px solid #FFA488;
+    border: 2px solid black;
     border-radius: 15%;
     width: 50px;
     background: #FFC8B4;
@@ -52,7 +57,7 @@ select{
     color: black;
 }
 .sure{
-    border: 2px solid #FF8282;
+    border: 2px solid purple;
     border-radius: 15%;
     width: 50px;
     background:  #FFC9C9;
@@ -73,34 +78,22 @@ select{
 <form action="Result.php" method="post">
 <input type="hidden" name ="act" value ="searchEcology">
 <table>
-<tr><th colspan="2">查詢UI</th></tr>
+<tr><th colspan="2">登入系統</th></tr>
 
 <tr>
-<td style="text-align:center">關鍵字</td>
-<td><input type="text" style="font-size:20px" name="Keyword" placeholder="Ex.艾氏樹蛙"/></td>
+<td style="text-align:center">UserName</td>
+<td><input type="text" style="font-size:20px" name="Keyword" placeholder="UserName"/></td>
 </tr>
 
 <tr>
-<td style="text-align:center">物種</td>
-<td><select style="font-size:20px" name="Label">
-<option value="frog" selected >青蛙</option>
-<option value="lepidoptera" >蝴蝶</option>
-</select></td>
+<td style="text-align:center">Password</td>
+<td><input type="password" style="font-size:20px" name="Family" placeholder="Password"/></td>
 </tr>
 
-<tr>
-<td style="text-align:center">科別</td>
-<td><input type="text" style="font-size:20px" name="Family" placeholder="Ex.樹蛙科"/></td>
-</tr>
-
-<tr>
-<td style="text-align:center">屬</td>
-<td><input type="text" style="font-size:20px" name="Genus" placeholder="Ex.原指樹蛙屬"/></td>
-</tr>
 
 <tr><th colspan="2">
     <input type = "reset" class = "reset" value = "重填" />
-    <input type = "submit" class = "sure" value = "確認" />
+    <input type = "submit" class = "sure" value = "登入" />
 </th>
 </tr>
 
