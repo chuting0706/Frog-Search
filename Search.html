@@ -1,3 +1,7 @@
+<?php
+	session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,37 +12,53 @@
 <link rel="stylesheet" href="search.css">
 </head>
 <body>
+<link rel="stylesheet" type="text/css">
 <form action="Result.php" method="post">
-<input type="hidden" name ="act" value ="searchEcology">
+<input type="hidden" name="act" value="searchEcology">
 <table>
-<tr><th colspan="2">查詢UI</th></tr>
+<tr>
+	<th colspan="2">查詢</th>
+</tr>
 
 <tr>
 <td style="text-align:center">關鍵字</td>
-<td><input type="text" style="font-size:20px" name="Keyword" class="keyword" placeholder="Ex.艾氏樹蛙"/></td>
+<td>
+	<input type="text" style="text-align:left; padding:12px; font-size:18px; color:#787878; font-weight:bold;" 
+	name="Keyword" class="keyword" placeholder="艾氏樹蛙"/>
+</td>
 </tr>
 
 <tr>
 <td style="text-align:center">物種</td>
-<td><select style="font-size:20px" name="Label" class="label">
-<option value="frog" selected >青蛙</option>
-<option value="lepidoptera" >蝴蝶</option>
-</select></td>
+<td>
+	<select style="text-align:left; padding:12px; font-size:18px; color:black; font-weight:bold;" 
+	name="Label" class="label">
+	<option value="frog" selected>青蛙</option>
+	<option value="lepidoptera">蝴蝶</option>
+	</select>
+</td>
 </tr>
 
 <tr>
 <td style="text-align:center">科別</td>
-<td><input type="text" style="font-size:20px" name="Family" class="family" placeholder="Ex.樹蛙科"/></td>
+<td>
+	<input style="text-align:left; padding:12px; font-size:18px; color:#787878; font-weight:bold;" 
+	name="Family" class="family" placeholder="樹蛙科"/>
+</td>
 </tr>
 
 <tr>
 <td style="text-align:center">屬</td>
-<td><input type="text" style="font-size:20px" name="Genus" class="genus" placeholder="Ex.原指樹蛙屬"/></td>
+<td>
+	<input style="text-align:left; padding:12px; font-size:18px; color:#787878; font-weight:bold;" 
+	name="Genus" class="genus" placeholder="原指樹蛙屬"/>
+</td>
 </tr>
 
-<tr><th colspan="2">
-    <input type = "reset" class = "reset" value = "重填" />
-    <input type = "submit" class = "sure" value = "確認" />
+<tr>
+	<th colspan="2">
+    <input type="reset" class="reset" value="重填"/>
+    <input type="submit" class="sure" value="確認"/>
 </th>
 </tr>
 
