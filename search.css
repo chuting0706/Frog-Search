@@ -10,7 +10,7 @@ table{
 }
 th{
     padding: 10px 3px;
-    background: #105170;
+    background: #3B8E96;
     font-size: 35px;
     font-weight: bold;
     color: #FFFFFF;
@@ -39,48 +39,49 @@ td{
     border-color: white;
 }
 .reset{
-    border: 2px solid #3B8E96;
+    border: 2px solid #98C794;
     border-radius: 5%;
     padding: 2px 2px;
     width: 80px;
-    background: #105170;
+    background: #3B8E96;
     font-size: 25px;
     font-weight: bold;
-    color: #3B8E96;
+    color: #98C794;
     cursor: pointer;
     margin: 15px;
     font-family: SimSun;
 }
 .reset:hover{
-    background: #3B8E96;
+    background: #98C794;
     color: #FFFFFF;
 }
 .sure{
-    border: 2px solid #3B8E96;
+    border: 2px solid #98C794;
     border-radius: 5%;
     padding: 2px 2px;
     width: 80px;
-    background: #105170;
+    background: #3B8E96;
     font-size: 25px;
     font-weight: bold;
-    color: #3B8E96;
+    color: #98C794;
     cursor: pointer;
     margin: 15px;
     font-family: SimSun;
 }
 .sure:hover{
-    background: #3B8E96;
+    background: #98C794;
     color: #FFFFFF;
 }
 .return{
-    border: 1px solid #105170;
+    border: 1px solid #3B8E96;
     border-radius: 5%;
     padding: 1px 1px 1px 1px;
     width: 120px;
-    background: #105170;
+    background: #3B8E96;
     font-size: 15px;
     font-weight: bold;
-    color: #BDC0BA;
+    text-decoration-line: underline;
+    color: #E5C05B;
     margin: 3px;
     font-family: SimSun;
 }
