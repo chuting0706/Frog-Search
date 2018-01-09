@@ -1,5 +1,6 @@
 <?php
-    require("../Modules/Function.php");
+    require("./Modules/Function.php");
+    require("./Modules/photoFunction.php");
 ?>
 <link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
 <style type="text/css">
@@ -56,14 +57,39 @@ table tr td {
                 echo "<td>$name</td>";
                 $count ++;
             }
+            echo "<td>圖片</td>";
             echo "</tr><tr>";
+            $selector1 = 0;
             foreach ($section as $name => $val) {
                 echo "<td>$val</td>";
+                $selector1++;
+                if($selector1 == 2) {
+                  $orga = $val;
+                }
+            }
+            $try = randSpecialOne($orga);
+            // echo $orga;
+            if ($rs=mysqli_fetch_array($try)) {
+            echo "<td><a href='".$rs['path']."'>點擊瀏覽</a></td>";
+            } else {
+              echo "<td>無</td>";
             }
         } else if ($count > 0) {
             echo "</tr><tr>";
+            $selector2 = 0;
             foreach ($section as $name => $val) {
                 echo "<td>$val</td>";
+                $selector2++;
+                if($selector2 == 2) {
+                  $orga = $val;
+                }
+            }
+            $try = randSpecialOne('測試2');
+            // echo $orga;
+            if ($rs=mysqli_fetch_array($try)) {
+            echo "<td><a href='".$rs['path']."'>點擊瀏覽</a></td>";
+            } else {
+              echo "<td>無</td>";
             }
         }
         echo "</tr>";
