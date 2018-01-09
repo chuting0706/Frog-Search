@@ -72,3 +72,19 @@ td{
     background: #3B8E96;
     color: #FFFFFF;
 }
+.return{
+    border: 1px solid #105170;
+    border-radius: 5%;
+    padding: 1px 1px 1px 1px;
+    width: 120px;
+    background: #105170;
+    font-size: 15px;
+    font-weight: bold;
+    color: #BDC0BA;
+    margin: 3px;
+    font-family: SimSun;
+}
+.return:hover{
+    background: #3B8E96;
+    color: #FFFFFF;
+}

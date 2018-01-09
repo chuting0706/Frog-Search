@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css">
 <form action="Result.php" method="post">
 <input type="hidden" name="act" value="searchEcology">
+
 <table>
 <tr>
 	<th colspan="2">查詢</th>
@@ -58,7 +59,8 @@
 <tr>
 	<th colspan="2">
     <input type="reset" class="reset" value="重填"/>
-    <input type="submit" class="sure" value="確認"/>
+    <input type="submit" class="sure" value="確認"/></br>
+    <input type="button" class="return" value="重新選擇物種" onclick="self.location.href='choice.html'"/>
 </th>
 </tr>
 
