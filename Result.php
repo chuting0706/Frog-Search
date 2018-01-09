@@ -2,6 +2,22 @@
     require("../Modules/Function.php");
 ?>
 <link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
+<style type="text/css">
+div {
+margin:  auto;
+padding: 50px;
+background-color: #FFFFF0;
+border: dotted green 5px
+}
+a{
+text-decoration:none;
+color:#4B0082
+}
+table tr td {
+background-color: #cfc;
+padding: 10px;
+}
+</style>
 <title>查詢結果</title>
 <div class = "container">
 <?php
@@ -9,8 +25,14 @@
     $Label = $_REQUEST['Label'];
     $Family = $_REQUEST['Family'];
     $Genus = $_REQUEST['Genus'];
-    echo "你輸入的值為："."<br/>Keyword: ".$Keyword."<br/>Label: ".$Label."<br/>Family: ".$Family."<br/>Genus: ".$Genus;
-    echo "<br/><hr/><h1>搜尋結果如下：</h1>";
+    echo  '<a href="Search.html" >重新輸入</a>';
+	echo "<table><tr><td colspan=4>你輸入的值為</td></tr>"."
+	<tr><td>Keyword:</td><td>".$Keyword."
+	</td><td>Label:</td><td>".$Label."
+	</td></tr><tr><td>Family: </td><td>".$Family."
+	</td><td>Genus:</td><td>".$Genus;
+	echo '</td></tr></table>';
+    echo "<hr/><h1>搜尋結果如下：</h1>";
     echo '<table class = "table"><tr>';
     $results = searchEcology($Keyword, $Label, $Family, $Genus);
     $count = 0;
