@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
+<title>查詢系統</title>
+<!-- <link href="mycss.css" rel="stylesheet" type="text/css" /> -->
+<link rel="stylesheet" href="search.css">
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+<form action="ResultLepidoptera.php" method="post">
+<input type="hidden" name="act" value="searchEcology">
+<table>
+<tr>
+	<th colspan="2">查詢</th>
+</tr>
+
+<tr>
+<td style="text-align:center">關鍵字</td>
+<td>
+    <input type="text" style="text-align:left; padding:12px; font-size:18px; color:#787878; font-weight:bold;" 
+    name="Keyword" class="keyword" placeholder="白弄蝶"/>
+</td>
+</tr>
+
+<tr>
+<td style="text-align:center">物種</td>
+<td>
+    <select style="text-align:left; padding:12px; font-size:18px; color:black; font-weight:bold;" 
+    name="Label" class="label">
+    <option value="lepidoptera" selected>蝴蝶</option>
+    <option value="frog">青蛙</option>
+    </select>
+</td>
+</tr>
+
+<tr>
+<td style="text-align:center">科別</td>
+<td>
+    <input style="text-align:left; padding:12px; font-size:18px; color:#787878; font-weight:bold;" 
+    name="Family" class="family" placeholder="弄蝶科"/>
+</td>
+</tr>
+
+<tr>
+    <th colspan="2">
+    <input type="reset" class="reset" value="重填"/>
+    <input type="submit" class="sure" value="確認"/>
+    <input type="button" class="return" value="重新選擇物種" onclick="self.location.href='choice.html'"/>
+</th>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
