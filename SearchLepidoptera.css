@@ -10,7 +10,7 @@ table{
 }
 th{
     padding: 10px 3px;
-    background: #E98B2A;
+    background: #E5C05B;
     font-size: 35px;
     font-weight: bold;
     color: #FFFFFF;
@@ -39,53 +39,53 @@ td{
     border-color: white;
 }
 .reset{
-    border: 2px solid #f1521a;
+    border: 2px solid #49A59A;
     border-radius: 5%;
     padding: 2px 2px;
     width: 80px;
-    background: #E98B2A;
+    background: #E5C05B;
     font-size: 25px;
     font-weight: bold;
-    color: #f1521a;
+    color: #49A59A;
     cursor: pointer;
     margin: 15px;
     font-family: SimSun;
 }
 .reset:hover{
-    background: #f1521a;
+    background: #49A59A;
     color: #FFFFFF;
 }
 .sure{
-    border: 2px solid #f1521a;
+    border: 2px solid #49A59A;
     border-radius: 5%;
     padding: 2px 2px;
     width: 80px;
-    background: #E98B2A;
+    background: #E5C05B;
     font-size: 25px;
     font-weight: bold;
-    color: #f1521a;
+    color: #49A59A;
     cursor: pointer;
     margin: 15px;
     font-family: SimSun;
 }
 .sure:hover{
-    background: #f1521a;
+    background: #49A59A;
     color: #FFFFFF;
 }
 .return{
-    border: 1px solid #E98B2A;
+    border: 1px solid #E5C05B;
     border-radius: 5%;
     padding: 1px 1px 1px 1px;
     width: 120px;
-    background: #E98B2A;
+    background: #E5C05B;
     font-size: 15px;
     font-weight: bold;
     text-decoration-line: underline;
-    color: #FFD027;
+    color: #3D445E;
     margin: 3px;
     font-family: SimSun;
 }
 .return:hover{
-    background: #E98B2A;
+    background: #E5C05B;
     color: #FFFFFF;
 }
