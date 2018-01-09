@@ -44,7 +44,7 @@ table tr td {
     </td><td>物種:".$Label."
     </td><td>科別:".$Family;
     echo '</td></tr></table>';
-    echo '<br><a href="Search.html" >重新輸入</a>';
+    echo '<br><a href="SearchLepidoptera.html" >重新輸入</a>';
     echo "<hr/><h1>搜尋結果如下：</h1>";
     echo '<table class = "table"><tr>';
     $results = searchEcology($Keyword, $Label, $Family);
