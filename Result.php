@@ -31,7 +31,6 @@ padding: 10px;
     $Family = $_REQUEST['Family'];
     $Genus = $_REQUEST['Genus'];
     echo  '<a href="Search.html" >重新輸入</a>';
-	echo  '<a href="Search.html" style="float:right;">登出</a><hr/>';
 	echo "<table><tr><td colspan=4>你輸入的值為</td></tr>"."
 	<tr><td>Keyword:</td><td>".$Keyword."
 	</td><td>Label:</td><td>".$Label."
