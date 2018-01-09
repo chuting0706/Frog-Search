@@ -50,21 +50,51 @@ table tr td {
     $results = searchEcology($Keyword, $Label, $Family);
     $count = 0;
     foreach ($results as $key => $section) {
-        if($count == 0) {
-            foreach ($section as $name => $val) {
-                echo "<td>$name</td>";
-                $count ++;
-            }
-            echo "</tr><tr>";
-            foreach ($section as $name => $val) {
-                echo "<td>$val</td>";
-            }
-        } else if ($count > 0) {
-            echo "</tr><tr>";
-            foreach ($section as $name => $val) {
-                echo "<td>$val</td>";
-            }
-        }
+      if($count == 0) {
+        //從db撈出資料欄位名稱
+          foreach ($section as $name => $val) {
+              echo "<td>$name</td>";
+              $count ++;
+          }
+          /*
+           * 因`library`資料庫無圖片欄位，因此個別對圖片處理
+           * 此處為印出圖片欄位名稱
+           */
+          echo "<td>圖片</td>";
+          echo "</tr><tr>";
+          $selector1 = 0;
+          //從db撈出第一筆資料~
+          foreach ($section as $name => $val) {
+              echo "<td>$val</td>";
+              $selector1++; //第一筆欄位是id
+              if($selector1 == 2) { //第二筆欄位是orga
+                $orga = $val; //存取資料，用來撈圖片資料
+              }
+          }
+          $try = randSpecialOne($orga); //針對同一個物種，隨機撈出這個物種的一張圖片 (如有超過1筆是random，無則唯一)
+          if ($rs=mysqli_fetch_array($try)) {
+          echo "<td><a href='".$rs['path']."'>點擊瀏覽</a></td>"; //用鏈接方式開啟
+          } else {
+            echo "<td>無</td>"; //如果沒資料，則渲染‘無’
+          }
+      } else if ($count > 0) {
+          echo "</tr><tr>";
+          $selector2 = 0;
+          foreach ($section as $name => $val) {
+              echo "<td>$val</td>";
+              $selector1++; //第一筆欄位是id
+              if($selector1 == 2) { //第二筆欄位是orga
+                $orga = $val; //存取資料，用來撈圖片資料
+              }
+          }
+          $try = randSpecialOne($orga); //針對同一個物種，隨機撈出這個物種的一張圖片 (如有超過1筆是random，無則唯一)
+          // echo $orga;
+          if ($rs=mysqli_fetch_array($try)) {
+          echo "<td><a href='".$rs['path']."'>點擊瀏覽</a></td>"; //用鏈接方式開啟
+          } else {
+            echo "<td>無</td>"; //如果沒資料，則渲染‘無’
+          }
+      }
         echo "</tr>";
     }
     echo '</table>'
