@@ -1,5 +1,6 @@
 <?php
     require("../Modules/Function.php");
+    require("../Modules/photoFunction.php");
 ?>
 <link href="http://i.ebayimg.com/images/i/261982144213-0-1/s-l1000.jpg" rel="shortcut icon">
 <style type="text/css">
